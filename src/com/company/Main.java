@@ -17,7 +17,7 @@ public class Main {
         boolean test = true;
              if (n > 2) {      
                  for (int a = 1; a < 100; a++) {
-                     for (int b = 0; b < 100; b++) {
+                     for (int b = a; b < 100; b++) {
                          for (int c = 0; c < 100; c++) {
 
                              if (Math.pow(a, n) + Math.pow(b, n) != Math.pow(c, n)) {
@@ -34,7 +34,7 @@ public class Main {
              }
              if (n == 2) {
                  for (int a = 1; a < 100; a++) {
-                     for (int b = 0; b < 100; b++) {
+                     for (int b = a; b < 100; b++) {
                          for (int c = 0; c < 100; c++) {
                              if (Math.pow(a, n) + Math.pow(b, n) == Math.pow(c, n)) {
                                  System.out.println(a + "^2+" + b + "^2+=" + c + "^2");
