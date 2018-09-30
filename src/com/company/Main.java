@@ -36,7 +36,7 @@ public class Main {
                  for (int a = 1; a < 100; a++) {
                      for (int b = a; b < 100; b++) {
                          for (int c = 0; c < 100; c++) {
-                             if (Math.pow(a, n) + Math.pow(b, n) == Math.pow(c, n)) {
+                             if (a*a + b*b == c*c) {
                                  System.out.println(a + "^2+" + b + "^2+=" + c + "^2");
                              }
                          }
